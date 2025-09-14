@@ -80,3 +80,5 @@ console.log(executeWork(createEmployee(200))); // Getting to work
 console.log(executeWork(createEmployee(1000))); // Getting to director tasks
 console.log(teachClass("Math")); // Teaching Math
 console.log(teachClass("History")); // Teaching History
+
+///end of line
