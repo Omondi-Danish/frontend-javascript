@@ -82,3 +82,4 @@ console.log(teachClass("Math")); // Teaching Math
 console.log(teachClass("History")); // Teaching History
 
 ///end of line
+//another line
