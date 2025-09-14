@@ -1,34 +1,33 @@
-/// <reference path="./subjects/Cpp.ts" />
-/// <reference path="./subjects/Java.ts" />
-/// <reference path="./subjects/React.ts" />
+import { Subjects } from "./subjects/Teacher";
+import { Cpp } from "./subjects/Cpp";
+import { Java } from "./subjects/Java";
+import { React } from "./subjects/React";
 
-import { Subjects } from "./subjects/Subject"; // optional if using modules
+// ✅ Create instances of each subject
+const cpp = new Cpp();
+const java = new Java();
+const react = new React();
 
-// ✅ Create and export constants for each subject
-export const cpp = new Subjects.Cpp();
-export const java = new Subjects.Java();
-export const react = new Subjects.React();
-
-// ✅ Create and export the teacher object
+// ✅ Create a properly typed teacher object
 export const cTeacher: Subjects.Teacher = {
   firstName: "John",
   lastName: "Doe",
-  experienceTeachingC: 10, // Teacher has 10 years teaching C
+  experienceTeachingC: 10,
 };
 
-// ✅ Use the Cpp class
+// --- Cpp ---
 console.log("C++");
 cpp.setTeacher(cTeacher);
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-// ✅ Use the Java class
+// --- Java ---
 console.log("Java");
 java.setTeacher(cTeacher);
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
-// ✅ Use the React class
+// --- React ---
 console.log("React");
 react.setTeacher(cTeacher);
 console.log(react.getRequirements());
