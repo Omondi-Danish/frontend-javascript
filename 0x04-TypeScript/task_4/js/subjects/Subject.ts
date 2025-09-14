@@ -1,13 +1,10 @@
-// task_4/js/subjects/Subject.ts
+import { Teacher } from "./Teacher";
 
-/// <reference path="./Teacher.ts" />
+export class Subject {
+  teacher: Teacher;
 
-namespace Subjects {
-  export class Subject {
-    teacher: Teacher;
-
-    setTeacher(teacher: Teacher) {
-      this.teacher = teacher;
-    }
+  // ✅ Explicitly type the parameter
+  setTeacher(teacher: Teacher) {
+    this.teacher = teacher;
   }
 }
