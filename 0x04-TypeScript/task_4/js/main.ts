@@ -1,4 +1,4 @@
-import { Subjects } from "./subjects/Teacher";
+import { Teacher } from "./subjects/Teacher";
 import { Cpp } from "./subjects/Cpp";
 import { Java } from "./subjects/Java";
 import { React } from "./subjects/React";
@@ -8,8 +8,8 @@ const cpp = new Cpp();
 const java = new Java();
 const react = new React();
 
-// ✅ Create a properly typed teacher object
-export const cTeacher: Subjects.Teacher = {
+// ✅ Explicitly type cTeacher as Teacher (not Subjects.Teacher)
+export const cTeacher: Teacher = {
   firstName: "John",
   lastName: "Doe",
   experienceTeachingC: 10,
